@@ -9,6 +9,7 @@ form.addEventListener('click', () => {
 
 fileInput.onchange = ({ target }) => {
   let file = target.files[0];
+  console.log('@@@', file)
   if (file) {
     let fileName = file.name;
     if (fileName.length >= 12) {
